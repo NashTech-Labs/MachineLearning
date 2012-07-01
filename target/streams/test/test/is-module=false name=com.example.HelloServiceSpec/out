@@ -1,0 +1,12 @@
+[0m[[0minfo[0m] [0mHelloServiceSpec[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0mThe HelloService should[0m
+[0m[[0minfo[0m] [0m[32m+[0m return a greeting for GET requests to the root path[0m
+[0m[[0minfo[0m] [0m[32m+[0m leave GET requests to other paths unhandled[0m
+[0m[[0minfo[0m] [0m[32m+[0m return a MethodNotAllowed error for POST requests to the root path[0m
+[0m[[0minfo[0m] [0m [0m
+[0m[[0minfo[0m] [0m [0m
+[0m[[0minfo[0m] [0mTotal for specification HelloServiceSpec[0m
+[0m[[0minfo[0m] [0m[34mFinished in 573 ms[0m[0m
+[0m[[0minfo[0m] [0m[34m3 examples, 0 failure, 0 error[0m[0m
+[0m[[0minfo[0m] [0m[0m

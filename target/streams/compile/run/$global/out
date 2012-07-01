@@ -1,0 +1,114 @@
+[0m[[0minfo[0m] [0mRunning com.example.Boot [0m
+[0m[[0mdebug[0m] [0mStarting sandboxed run...[0m
+[0m[[0mdebug[0m] [0mWaiting for threads to exit or System.exit to be called.[0m
+[0m[[0mdebug[0m] [0m  Classpath:[0m
+[0m[[0mdebug[0m] [0m	F:\git\Intellij\spray-lingpipe\spray-lingpipe\target\scala-2.9.1\classes[0m
+[0m[[0mdebug[0m] [0m	F:\git\Intellij\spray-lingpipe\spray-lingpipe\lib\lingpipe-4.1.0.jar[0m
+[0m[[0mdebug[0m] [0m	C:\Users\Astar\.sbt\boot\scala-2.9.1\lib\scala-library.jar[0m
+[0m[[0mdebug[0m] [0m	C:\Users\Astar\.ivy2\cache\com.typesafe.akka\akka-actor\jars\akka-actor-2.0.jar[0m
+[0m[[0mdebug[0m] [0m	C:\Users\Astar\.ivy2\cache\cc.spray\spray-can\jars\spray-can-1.0-M1.jar[0m
+[0m[[0mdebug[0m] [0m	C:\Users\Astar\.ivy2\cache\cc.spray\spray-io\jars\spray-io-1.0-M1.jar[0m
+[0m[[0mdebug[0m] [0m	C:\Users\Astar\.ivy2\cache\cc.spray\spray-util\jars\spray-util-1.0-M1.jar[0m
+[0m[[0mdebug[0m] [0m	C:\Users\Astar\.ivy2\cache\cc.spray\spray-server\jars\spray-server-1.0-M1.jar[0m
+[0m[[0mdebug[0m] [0m	C:\Users\Astar\.ivy2\cache\cc.spray\spray-base\jars\spray-base-1.0-M1.jar[0m
+[0m[[0mdebug[0m] [0m	C:\Users\Astar\.ivy2\cache\org.jvnet\mimepull\jars\mimepull-1.6.jar[0m
+[0m[[0mdebug[0m] [0m	C:\Users\Astar\.ivy2\cache\org.parboiled\parboiled-scala\jars\parboiled-scala-1.0.2.jar[0m
+[0m[[0mdebug[0m] [0m	C:\Users\Astar\.ivy2\cache\org.parboiled\parboiled-core\jars\parboiled-core-1.0.2.jar[0m
+[0m[[0mdebug[0m] [0m	C:\Users\Astar\.ivy2\cache\com.googlecode.concurrentlinkedhashmap\concurrentlinkedhashmap-lru\jars\concurrentlinkedhashmap-lru-1.2.jar[0m
+[0m[[0mdebug[0m] [0m	C:\Users\Astar\.ivy2\cache\cc.spray\spray-json_2.9.1\jars\spray-json_2.9.1-1.1.1.jar[0m
+[0m[[0mdebug[0m] [0m	C:\Users\Astar\.ivy2\cache\com.typesafe.akka\akka-slf4j\jars\akka-slf4j-2.0.jar[0m
+[0m[[0mdebug[0m] [0m	C:\Users\Astar\.ivy2\cache\org.slf4j\slf4j-api\jars\slf4j-api-1.6.4.jar[0m
+[0m[[0mdebug[0m] [0m	C:\Users\Astar\.ivy2\cache\ch.qos.logback\logback-classic\jars\logback-classic-1.0.0.jar[0m
+[0m[[0mdebug[0m] [0m	C:\Users\Astar\.ivy2\cache\ch.qos.logback\logback-core\jars\logback-core-1.0.0.jar[0m
+[0m[[0mdebug[0m] [0mWaiting for thread run-main to exit[0m
+[0m[[31merror[0m] [0m(run-main) java.lang.ExceptionInInitializerError[0m
+java.lang.ExceptionInInitializerError
+	at com.example.Boot$delayedInit$body.apply(Boot.scala:11)
+	at scala.Function0$class.apply$mcV$sp(Function0.scala:34)
+	at scala.runtime.AbstractFunction0.apply$mcV$sp(AbstractFunction0.scala:12)
+	at scala.App$$anonfun$main$1.apply(App.scala:60)
+	at scala.App$$anonfun$main$1.apply(App.scala:60)
+	at scala.collection.LinearSeqOptimized$class.foreach(LinearSeqOptimized.scala:59)
+	at scala.collection.immutable.List.foreach(List.scala:45)
+	at scala.collection.generic.TraversableForwarder$class.foreach(TraversableForwarder.scala:30)
+	at scala.App$class.main(App.scala:60)
+	at com.example.Boot$.main(Boot.scala:9)
+	at com.example.Boot.main(Boot.scala)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at sbt.Run.invokeMain(Run.scala:66)
+	at sbt.Run.run0(Run.scala:59)
+	at sbt.Run.execute$1(Run.scala:48)
+	at sbt.Run$$anonfun$run$1.apply$mcV$sp(Run.scala:52)
+	at sbt.TrapExit$.executeMain$1(TrapExit.scala:33)
+	at sbt.TrapExit$$anon$1.run(TrapExit.scala:42)
+Caused by: java.io.FileNotFoundException: txt_sentoken\neg\spray-lingpipe (Access is denied)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at com.aliasi.util.Files.readCharsFromFile(Files.java:158)
+	at com.aliasi.util.Files.readFromFile(Files.java:184)
+	at com.example.Sentiment$$anonfun$train$1$$anonfun$apply$mcVI$sp$1.apply$mcVI$sp(Sentiment.scala:37)
+	at scala.collection.immutable.Range.foreach$mVc$sp(Range.scala:78)
+	at com.example.Sentiment$$anonfun$train$1.apply$mcVI$sp(Sentiment.scala:33)
+	at scala.collection.immutable.Range.foreach$mVc$sp(Range.scala:75)
+	at com.example.Sentiment$.train(Sentiment.scala:28)
+	at com.example.Sentiment$.<init>(Sentiment.scala:16)
+	at com.example.Sentiment$.<clinit>(Sentiment.scala)
+	at com.example.Boot$delayedInit$body.apply(Boot.scala:11)
+	at scala.Function0$class.apply$mcV$sp(Function0.scala:34)
+	at scala.runtime.AbstractFunction0.apply$mcV$sp(AbstractFunction0.scala:12)
+	at scala.App$$anonfun$main$1.apply(App.scala:60)
+	at scala.App$$anonfun$main$1.apply(App.scala:60)
+	at scala.collection.LinearSeqOptimized$class.foreach(LinearSeqOptimized.scala:59)
+	at scala.collection.immutable.List.foreach(List.scala:45)
+	at scala.collection.generic.TraversableForwarder$class.foreach(TraversableForwarder.scala:30)
+	at scala.App$class.main(App.scala:60)
+	at com.example.Boot$.main(Boot.scala:9)
+	at com.example.Boot.main(Boot.scala)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at sbt.Run.invokeMain(Run.scala:66)
+	at sbt.Run.run0(Run.scala:59)
+	at sbt.Run.execute$1(Run.scala:48)
+	at sbt.Run$$anonfun$run$1.apply$mcV$sp(Run.scala:52)
+	at sbt.TrapExit$.executeMain$1(TrapExit.scala:33)
+	at sbt.TrapExit$$anon$1.run(TrapExit.scala:42)
+[0m[[0mdebug[0m] [0m	Thread run-main exited.[0m
+[0m[[0mdebug[0m] [0mInterrupting remaining threads (should be all daemons).[0m
+[0m[[0mdebug[0m] [0mSandboxed run complete..[0m
+java.lang.RuntimeException: Nonzero exit code: 1
+	at scala.sys.package$.error(package.scala:27)
+	at sbt.BuildCommon$$anonfun$toError$1.apply(Defaults.scala:1166)
+	at sbt.BuildCommon$$anonfun$toError$1.apply(Defaults.scala:1166)
+	at scala.Option.foreach(Option.scala:197)
+	at sbt.BuildCommon$class.toError(Defaults.scala:1166)
+	at sbt.Defaults$.toError(Defaults.scala:32)
+	at sbt.Defaults$$anonfun$runTask$1$$anonfun$apply$22.apply(Defaults.scala:430)
+	at sbt.Defaults$$anonfun$runTask$1$$anonfun$apply$22.apply(Defaults.scala:428)
+	at sbt.Scoped$$anonfun$hf5$1.apply(Structure.scala:476)
+	at sbt.Scoped$$anonfun$hf5$1.apply(Structure.scala:476)
+	at scala.Function1$$anonfun$compose$1.apply(Function1.scala:41)
+	at sbt.Scoped$Reduced$$anonfun$combine$1$$anonfun$apply$11.apply(Structure.scala:295)
+	at sbt.Scoped$Reduced$$anonfun$combine$1$$anonfun$apply$11.apply(Structure.scala:295)
+	at sbt.$tilde$greater$$anonfun$$u2219$1.apply(TypeFunctions.scala:40)
+	at sbt.std.Transform$$anon$5.work(System.scala:67)
+	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:221)
+	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:221)
+	at sbt.ErrorHandling$.wideConvert(ErrorHandling.scala:18)
+	at sbt.Execute.work(Execute.scala:227)
+	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:221)
+	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:221)
+	at sbt.CompletionService$$anon$1$$anon$2.call(CompletionService.scala:26)
+	at java.util.concurrent.FutureTask$Sync.innerRun(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask$Sync.innerRun(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[0m[[31merror[0m] [0m{file:/F:/git/Intellij/spray-lingpipe/spray-lingpipe/}spray-lingpipe/compile:[31mrun[0m: Nonzero exit code: 1[0m

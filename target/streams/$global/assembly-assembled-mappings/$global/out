@@ -1,0 +1,17 @@
+[info] Including spray-base-1.0-M1.jar
+[info] Including spray-can-1.0-M1.jar
+[info] Including spray-io-1.0-M1.jar
+[info] Including spray-json_2.9.1-1.1.1.jar
+[info] Including spray-server-1.0-M1.jar
+[info] Including spray-util-1.0-M1.jar
+[info] Including logback-classic-1.0.0.jar
+[info] Including logback-core-1.0.0.jar
+[info] Including concurrentlinkedhashmap-lru-1.2.jar
+[info] Including akka-actor-2.0.jar
+[info] Including akka-slf4j-2.0.jar
+[info] Including mimepull-1.6.jar
+[info] Including parboiled-core-1.0.2.jar
+[info] Including parboiled-scala-1.0.2.jar
+[info] Including slf4j-api-1.6.4.jar
+[info] Including scala-library.jar
+[info] Including lingpipe-4.1.0.jar
